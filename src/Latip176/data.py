@@ -11,11 +11,11 @@ class Response(object):
     def __response(self, category=None, keyword=None) -> str:
         if category != None:
             return self._Response__session.get(
-                "http://www.mangayaro.net/"
+                "https://www.mangayaro.id/"
             )
         if keyword != None:
             return self._Response__session.get(
-                f"http://www.mangayaro.net/?s={keyword}"
+                f"https://www.mangayaro.id/?s={keyword}"
             )
 
 
